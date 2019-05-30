@@ -4,7 +4,7 @@ class Hello extends Component {
   render() {
     return (
       <div className="hello-text">
-        Hello World
+        Hello World update
       </div>
     )
   }
