@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-class Hello extends Component {
-  render() {
-    return (
-      <div className="hello-text">
-        Hello World update
-      </div>
-    )
-  }
+function Hello() {
+  return (
+    <div className="hello-text">Hello World story 2.0</div>
+  )
 }
 
 export default Hello
