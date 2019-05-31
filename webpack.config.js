@@ -15,6 +15,13 @@ module.exports = {
                 'babel-loader',
                 'eslint-loader'
             ]
+        },{
+            test: /\.s?css$/,
+            use: [
+                'style-loader',
+                'css-loader',
+                'sass-loader'
+            ]
         }]
     },
     output: {
@@ -23,6 +30,9 @@ module.exports = {
     },
     resolve: {
         extensions: ['.js', '.jsx', '.css']
+    },
+    devServer: {
+        historyApiFallback: true
     },
     plugins: [HTMLWebpackPluginConfig]
 };
