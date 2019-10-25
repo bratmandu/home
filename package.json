@@ -6,12 +6,16 @@
   "scripts": {
     "dev": "webpack --mode development",
     "build": "webpack --mode development",
-    "start": "webpack-dev-server --mode development"
+    "start": "webpack-dev-server --mode development",
+    "test": "jest"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "css-loader": "^2.1.1",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "identity-obj-proxy": "^3.0.0",
     "node-sass": "^4.12.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
@@ -32,8 +36,14 @@
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.9.0",
     "webpack": "^4.32.2",
     "webpack-cli": "^3.3.2",
     "webpack-dev-server": "^3.4.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|scss|less)$": "identity-obj-proxy"
+    }
   }
 }
