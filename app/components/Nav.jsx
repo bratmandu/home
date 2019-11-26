@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { arrayOf, any } from 'prop-types'
 import { NavLink } from 'react-router-dom'
+import HamburgerMenu from './utilities/hamburgerMenu'
 
 class Nav extends Component {
   static propTypes = {
@@ -22,10 +23,13 @@ class Nav extends Component {
     const { appLinks } = this.state
 
     return (
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="navbar-brand">Navigation</div>
+      <nav className="navbar navbar-expand-lg">
+        <div className="navbar-brand h3 m-0 px-2">Navigation &gt;</div>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon" />
+          <span className="navbar-toggler-icon">
+            {/* replace with icon */}
+            {HamburgerMenu()}
+          </span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
@@ -39,6 +43,9 @@ class Nav extends Component {
                 ))
             }
           </ul>
+          <span className="navbar-text">
+            A single page responsive Web Application, built with React. By Michael Bratton
+          </span>
         </div>
       </nav>
     )

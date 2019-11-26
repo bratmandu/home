@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import Nav from './Nav'
-import FrontPageMain from './frontPage/frontPageMain'
-import CvComponentMain from './curriculumVitae/cvComponentMain'
-import SampleApp from './sampleReactApp01/sampleApp'
+import AppLinks from './utilities/appLinks'
 import '../../styles/styleMain.scss'
 
 class App extends Component {
@@ -12,25 +10,7 @@ class App extends Component {
   }
 
   componentDidMount() {
-    const appLinks = [
-      {
-        key: 1,
-        path: '/',
-        component: FrontPageMain,
-        name: 'Home',
-        default: true
-      }, {
-        key: 2,
-        path: '/CV',
-        component: CvComponentMain,
-        name: 'My CV'
-      }, {
-        key: 3,
-        path: '/SampleApp',
-        component: SampleApp,
-        name: 'Sample React App'
-      }
-    ]
+    const appLinks = AppLinks()
     this.setLinks(appLinks)
   }
 
@@ -48,7 +28,7 @@ class App extends Component {
           && (
             <BrowserRouter>
               <Nav appLinks={appLinks} />
-              <div>
+              <div className="container-fluid py-2">
                 {appLinks.map(link => (
                   <Route exact={link.default} key={link.key} path={link.path} component={link.component} />
                 ))}

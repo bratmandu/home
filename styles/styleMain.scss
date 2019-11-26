@@ -1,6 +1,30 @@
+.h3 {
+  color: lightcoral;
+  font-size: 0.75rem;
+}
 
 .nav {
-  &-link.active {
-    background: blue;
+  &-link {
+    color: gray;
+    &.active {
+    color: dodgerblue;
+    }
+    &:hover {
+      color: dodgerblue;
+    }
+  }
+}
+
+.navbar {
+  background-color: lightgrey;
+  &-text {
+    font-size: 0.75rem;
+    color: lightcoral;
+  }
+  &-icon-bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: dimgrey;
+    margin: 0.25rem 0;
   }
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 
-function FrontPageMain() {
+function FrontPageComponent() {
   return (
     <div>Main front page container</div>
   )
 }
 
-export default FrontPageMain
+export default FrontPageComponent

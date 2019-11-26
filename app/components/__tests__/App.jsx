@@ -6,9 +6,9 @@ import App from '../App'
 configure({ adapter: new Adapter() })
 
 describe('The App component should', () => {
-  it('contain 3 NavLinks', () => {
+  it('contain 4 NavLinks', () => {
     const wrapper = mount(<App />)
 
-    expect(wrapper.find('NavLink').length).toEqual(3)
+    expect(wrapper.find('NavLink').length).toEqual(4)
   })
 })
