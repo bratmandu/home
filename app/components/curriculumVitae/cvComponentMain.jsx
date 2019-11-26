@@ -1,9 +1,9 @@
 import React from 'react'
 
-function CvComponentMain() {
+function CvComponent() {
   return (
     <div>Main CV Container</div>
   )
 }
 
-export default CvComponentMain
+export default CvComponent
