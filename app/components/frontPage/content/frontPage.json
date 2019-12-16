@@ -1,0 +1,44 @@
+{
+  "introText": "Welcome to my site",
+  "pageSections": [
+    {
+      "sectionHeading": "About me",
+      "textParagraphs": [
+        {
+          "content": "Filler text for section 1 paragraph one. This will be the first paragraph."
+        },
+        {
+          "content": "Filler text for section 1 paragraph two. This will be the second paragraph."
+        }
+      ],
+      "captionPicture": "urlOfPic",
+      "captionText": "textOfPic"
+    },
+    {
+      "sectionHeading": "About this site",
+      "textParagraphs": [
+        {
+          "content": "Filler text for section 2 paragraph one. This will be the third paragraph."
+        },
+        {
+          "content": "Filler text for section 2 paragraph two. This will be the fourth paragraph."
+        }
+      ],
+      "captionPicture": "urlOfPic",
+      "captionText": "textOfPic"
+    },
+    {
+      "sectionHeading": "Tools I Use",
+      "textParagraphs": [
+        {
+          "content": "Filler text for section 3 paragraph one. This will be the fifth paragraph."
+        },
+        {
+          "content": "Filler text for section 3 paragraph two. This will be the sixth paragraph."
+        }
+      ],
+      "captionPicture": "urlOfPic",
+      "captionText": "textOfPic"
+    }
+  ]
+}
