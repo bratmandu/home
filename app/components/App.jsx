@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route } from 'react-router-dom'
 import Nav from './Nav'
+import Footer from './Footer'
 import AppLinks from './utilities/appLinks'
 import '../../styles/styleMain.scss'
 
@@ -28,11 +29,12 @@ class App extends Component {
           && (
             <BrowserRouter>
               <Nav appLinks={appLinks} />
-              <div className="container-fluid py-2">
+              <div className="container py-4 mb-5">
                 {appLinks.map(link => (
                   <Route exact={link.default} key={link.key} path={link.path} component={link.component} />
                 ))}
               </div>
+              <Footer />
             </BrowserRouter>
           )
         }
