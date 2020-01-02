@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { arrayOf, any, string } from 'prop-types'
+import PageList from '../common/pageList'
 import uuid from '../../../node_modules/uuid'
 
 
@@ -33,7 +34,14 @@ class PageSection extends Component {
         {sectionHeading && <h3>{sectionHeading}</h3>}
 
         {content.length > 0 && content.map(paragraph => (
-          <div key={uuid()} className="mb_paragraph">{paragraph.content}</div>
+          <div key={uuid()} className="mb_paragraph">
+            {paragraph.content}
+            {paragraph.list && paragraph.list.length > 0 && (
+              <PageList
+                list={paragraph.list}
+              />
+            )}
+          </div>
         ))}
       </div>
     )

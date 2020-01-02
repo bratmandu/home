@@ -29,9 +29,9 @@ class IntroText extends Component {
   render() {
     const { introText } = this.state
     return (
-      <div className="mb_introText">
+      <blockquote className="blockquote">
         {introText}
-      </div>
+      </blockquote>
     )
   }
 }
