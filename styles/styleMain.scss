@@ -1,6 +1,17 @@
-.h3 {
+h3 {
   color: lightcoral;
-  font-size: 0.75rem;
+  font-size: 1.25rem;
+  margin: 0.5rem 0;
+}
+
+.subHeader {
+  color: black;
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.strong {
+  font-weight: bold;
 }
 
 .nav {
@@ -32,4 +43,8 @@
 footer {
   line-height: 2rem;
   background-color: lightgrey;
+}
+
+.mb_pageSection {
+  margin-bottom: 1rem;;
 }

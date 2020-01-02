@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import pageContent from './content/frontPage.json'
 import IntroText from '../common/introText'
-import PageSection from '../common/pageSection'
+import PageSectionDefault from '../common/pageSectionDefault'
 import uuid from '../../../node_modules/uuid'
 
 class FrontPageComponent extends Component {
@@ -24,10 +24,10 @@ class FrontPageComponent extends Component {
       <div className="mb_page">
         <IntroText introText={introText} />
         { pageSections.length && pageSections.map(pageSection => (
-          <PageSection
+          <PageSectionDefault
             key={uuid()}
             sectionHeading={pageSection.sectionHeading}
-            textParagraphs={pageSection.textParagraphs}
+            content={pageSection.textParagraphs}
           />
         ))
         }

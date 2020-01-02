@@ -1,7 +1,7 @@
 {
   "introText": "This is my CV",
-  "pageSections": [
-    {
+  "pageSections": {
+    "details": {
       "sectionHeading": "Personal Details",
       "textDetails": [
         {
@@ -14,7 +14,7 @@
         }
       ]
     },
-    {
+    "address": {
       "sectionHeading": "Address",
       "textAddress": [
         {
@@ -31,7 +31,7 @@
         }
       ]
     },
-    {
+    "education": {
       "sectionHeading": "Education",
       "textEducation": [
         {
@@ -83,7 +83,7 @@
         }
       ]
     },
-    {
+    "skills": {
       "sectionHeading": "Skills",
       "introText": "Commonly used applications/languages",
       "textParagraphs": [
@@ -95,7 +95,7 @@
         }
       ]     
     },
-    {
+    "work": {
       "sectionHeading": "Work Experience",
       "workPeriods": [
         {
@@ -126,5 +126,5 @@
         }
       ]
     }
-  ]
+  }
 }
