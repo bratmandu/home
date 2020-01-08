@@ -27,7 +27,7 @@ class App extends Component {
       <div className="app">
         { appLinks.length
           && (
-            <BrowserRouter>
+            <BrowserRouter basename="/">
               <Nav appLinks={appLinks} />
               <div className="container py-4 mb-5">
                 {appLinks.map(link => (
