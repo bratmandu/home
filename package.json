@@ -1,9 +1,12 @@
 {
+  "homepage": "https://bratmandu.github.io/home/",
   "name": "app",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "webpack --mode development",
     "build": "webpack --mode development",
     "start": "webpack-dev-server --mode development",
@@ -37,6 +40,7 @@
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
+    "gh-pages": "^2.2.0",
     "html-webpack-plugin": "^3.2.0",
     "jest": "^24.9.0",
     "webpack": "^4.32.2",
