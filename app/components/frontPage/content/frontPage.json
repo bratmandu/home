@@ -30,6 +30,9 @@
               "content": "General React / JavaScript code, HTML and SCSS, Single Page Application development"
             },
             {
+              "content": "Front end unit tests using Jest Enzyme"
+            },
+            {
               "content": "Destructuring component parameters"
             },
             {
