@@ -32,7 +32,8 @@ module.exports = {
         extensions: ['.js', '.jsx', '.css']
     },
     devServer: {
-        historyApiFallback: true
+        historyApiFallback: true,
+        contentBase: "./build"
     },
     plugins: [HTMLWebpackPluginConfig]
 };
