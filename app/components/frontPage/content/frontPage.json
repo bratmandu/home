@@ -1,0 +1,102 @@
+{
+  "introText": "Welcome to my site!",
+  "pageSections": [
+    {
+      "sectionHeading": "About me",
+      "textParagraphs": [
+        {
+          "content": "Hello and welcome to the personal site of Michael Bratton. I am currently a Frontend Software Engineer/Web Application Developer. I created this responsive site using the React JavaScript library, and all page elements are react components, with the content taken from JSON files. The purpose of this site is to demonstrate my abilites in Web Application development."
+        },
+        {
+          "content": "I graduated from Interactive Multimedia Design with a 2.1 grade, from the University of Ulster, Jordanstown, in 2006. Since then I have worked as a Web Developer, and freelanced as a Programmer/3D developer before joining CME Group in 2012 as a Web Developer, initially working on the company website, later transitioning into Web Application Development, working primarilty with Backbone JS and more recently React."
+        }
+      ],
+      "captionPicture": "urlOfPic",
+      "captionText": "textOfPic"
+    },
+    {
+      "sectionHeading": "About this site",
+      "textParagraphs": [
+        {
+          "content": "This site was created from scratch using React. It is fully responsive meaning it can be viewed with mobile browsers and smaller screen sizes without having to manage a separate codebase for different resolutions/screen sizes."
+        },
+        {
+          "content": "On this site, the various sections demonstrate some of the concepts I've learned over the years, not only in the site's code, but also in the structure of my files, the linting I use to ensure clean, readable, maintainable code, and in how I commit and manage my code repository."
+        },
+        {
+          "content": "My repository is public and can be viewed/pulled here if you want to see my approach to putting the site together. Some of the key concepts I have sought to demonstrate on this site are:",
+          "list" : [
+            {
+              "content": "General React / JavaScript code, HTML and SCSS, Single Page Application development"
+            },
+            {
+              "content": "Front end unit tests using Jest Enzyme"
+            },
+            {
+              "content": "Destructuring component parameters"
+            },
+            {
+              "content": "Prop drilling for state management across components"
+            },
+            {
+              "content": "Template Literals"
+            },
+            {
+              "content": "Linting, code readability and structure"
+            },
+            {
+              "content": "Semantic HTML, good naming conventions and minimal css"
+            },
+            {
+              "content": "Performant code, error handling, using promises"
+            },
+            {
+              "content": "React routing and responsive navigation (note what happens to the navigation when the page has a smaller width)"
+            }            
+          ]
+        },
+        {
+          "content": "To demonstrate the above, I have used the various sections of my site. This page simply imports a JSON file and processes it using simple components for paragraphs/lists/etc. The CV page also imports a JSON file, but has custom components for the various sections to display each piece of the JSON different depending on what data is passed. The amount of items in list may change the appearance of a component for example."
+        },
+        {
+          "content": "The Sample React App page is a short demonstration of using promises to return some sample JSON data and process it. It will include CRUD operations (Create/Remove/Update/Delete)."
+        },
+        {
+          "content": "Lastly the Tutorial page will be a guide for beginners with React to get up to speed and developing, it will more or less cover my process for building this site, including set up and tools to use."
+        }
+      ],
+      "captionPicture": "urlOfPic",
+      "captionText": "textOfPic"
+    },
+    {
+      "sectionHeading": "Tools I Use",
+      "textParagraphs": [
+        {
+          "content": "These are the tools I have used to create this site and the tools I use in my day to day work, listed on my CV page are some other tools and programs I am proficient in.",
+          "list" : [
+            {
+              "content": "Visual Studio Code"
+            },
+            {
+              "content": "Git"
+            },
+            {
+              "content": "SourceTree"
+            },
+            {
+              "content": "Bitbucket"
+            },
+            {
+              "content": "Twitter Bootstrap"
+            },
+            {
+              "content": "Chrome Devtools (for debugging, with React-detector add on, and for mobile browser testing)"
+            } 
+          ]
+        }
+      ],
+      "captionPicture": "urlOfPic",
+      "captionText": "textOfPic"
+    }
+  ]
+}

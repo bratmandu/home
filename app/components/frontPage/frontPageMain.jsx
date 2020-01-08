@@ -1,94 +1,39 @@
-import React from 'react'
+import React, { Component } from 'react'
+import pageContent from './content/frontPage.json'
+import IntroText from '../common/introText'
+import PageSectionDefault from '../common/pageSectionDefault'
+import uuid from '../../../node_modules/uuid'
 
-function FrontPageComponent() {
-  return (
-    <div>Main front page container
-      <div>
-        Line <br />
+class FrontPageComponent extends Component {
+  state = {
+    introText: 'Welcome',
+    pageSections: []
+  }
+
+  componentDidMount() {
+    this.setState({
+      introText: pageContent.introText,
+      pageSections: pageContent.pageSections
+    })
+  }
+
+  render() {
+    const { introText, pageSections } = this.state
+
+    return (
+      <div className="mb_page">
+        <IntroText introText={introText} />
+        { pageSections.length && pageSections.map(pageSection => (
+          <PageSectionDefault
+            key={uuid()}
+            sectionHeading={pageSection.sectionHeading}
+            content={pageSection.textParagraphs}
+          />
+        ))
+        }
       </div>
-      <div>
-        Line full length of page lorum ipsum. Line full length of page lorum ipsum.  Line full length of page lorum ipsum.  Line full length of page lorum ipsum.  Line full length of page lorum ipsum. <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        Line <br />
-      </div>
-      <div>
-        *** LAST Line
-      </div>
-    </div>
-  )
+    )
+  }
 }
 
 export default FrontPageComponent

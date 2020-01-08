@@ -1,0 +1,26 @@
+[
+  {
+    "footerText": "Footer text line",
+    "icons": [
+      {
+        "name": "twitter",
+        "iconPic": "url of icon"
+      },
+      {
+        "name": "linkedIn",
+        "iconPic": "url of icon"
+      },
+      {
+        "name": "mail",
+        "iconPic": "url of icon"
+      }
+    ],
+    "copyright": "Michael Bratton",
+    "backToTop": [
+      {
+        "buttonText": "Back to top",
+        "buttonImage": "image url"
+      }
+    ]
+  }
+]

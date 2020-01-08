@@ -1,0 +1,130 @@
+{
+  "introText": "This is my CV",
+  "pageSections": {
+    "details": {
+      "sectionHeading": "Personal Details",
+      "textDetails": [
+        {
+          "title": "Phone",
+          "value": "07808009001"
+        },
+        {
+          "title": "Email",
+          "value": "michaeljamesbratton@gmail.com"
+        }
+      ]
+    },
+    "address": {
+      "sectionHeading": "Address",
+      "textAddress": [
+        {
+          "street": "18 Bashford Drive"
+        },
+        {
+          "town": "Carrickfergus"
+        },
+        {
+          "county": "CO ANTRIM"
+        },
+        {
+          "postcode": "BT38 9TW"
+        }
+      ]
+    },
+    "education": {
+      "sectionHeading": "Education",
+      "textEducation": [
+        {
+          "years": "2002-2006 University",
+          "summary": [
+            {
+              "course": "course name",
+              "grade": "course grade"
+            }
+          ]
+        },
+        {
+          "years": "1999-2001 A-Levels",
+          "summary": [
+            {
+              "course": "course name",
+              "grade": "course grade"
+            },
+            {
+              "course": "course name",
+              "grade": "course grade"
+            },
+            {
+              "course": "course name",
+              "grade": "course grade"
+            }
+          ]
+        },
+        {
+          "years": "1998-1999 GCSEs",
+          "summary": [
+            {
+              "course": "course name",
+              "grade": "course grade"
+            },
+            {
+              "course": "course name",
+              "grade": "course grade"
+            },
+            {
+              "course": "course name",
+              "grade": "course grade"
+            },
+            {
+              "course": "course name",
+              "grade": "course grade"
+            }
+          ]
+        }
+      ]
+    },
+    "skills": {
+      "sectionHeading": "Skills",
+      "introText": "Commonly used applications/languages",
+      "textParagraphs": [
+        {
+          "content": "I use a, b, c."
+        },
+        {
+          "content": "I use x, y, z."
+        }
+      ]     
+    },
+    "work": {
+      "sectionHeading": "Work Experience",
+      "workPeriods": [
+        {
+          "years": "2012-present",
+          "title": "Software Engineer",
+          "location": "CME Group Belfast",
+          "textParagraphs": [
+            {
+              "content": "I learned a, b, c."
+            },
+            {
+              "content": "I learned d, e, f."
+            }
+          ]
+        },
+        {
+          "years": "2008-2012",
+          "title": "Self Employed",
+          "location": "Cando3D Belfast",
+          "textParagraphs": [
+            {
+              "content": "I learned a, b, c."
+            },
+            {
+              "content": "I learned d, e, f."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
